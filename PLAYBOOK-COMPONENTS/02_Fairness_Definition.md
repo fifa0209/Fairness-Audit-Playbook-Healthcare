@@ -8,25 +8,20 @@
 
 ### Mathematical Formalization
 
-$P(\text{Approval} \mid \text{Clinical\_Justification} = \text{True}, \text{Emergency} = \text{True})$ should be equal across:
-* $\text{Request\_Originator} \in \{\text{GP}, \text{Surgeon}\}$
-* $\text{Premium\_Level} \in \{\text{Limited}, \text{Full}\}$
-* $\text{Geographic\_Location} \in \{\text{Rural}, \text{Urban}\}$
-
----
+P(Approval | Clinical_Justification = True, Emergency = True) should be equal across:
+* Request_Originator ∈ {GP, Surgeon}
+* Premium_Level ∈ {Limited, Full}  
+* Geographic_Location ∈ {Rural, Urban}
 
 ## 2.2 Fairness Metrics Selection
 
 ### Primary Metrics
 
 | Metric | Formalization | Rationale |
-| :--- | :--- | :--- |
-| **Equal Opportunity** (Clinical Merit-Based) | $P(\text{Approval} \mid \text{Clinically\_Justified} = \text{True}, \text{Requester} = \text{GP}) = P(\text{Approval} \mid \text{Clinically\_Justified} = \text{True}, \text{Requester} = \text{Surgeon})$ | Clinical justification should determine approval, not requester role. |
-| **Demographic Parity** (Coverage Equity) | $P(\text{Approval} \mid \text{Emergency} = \text{True}, \text{Premium} = \text{Limited}) = P(\text{Approval} \mid \text{Emergency} = \text{True}, \text{Premium} = \text{Full})$ | Emergency medical need should not depend on coverage tier. |
-| **Predictive Parity** (Outcome Reliability) | $P(\text{Medical\_Necessity} = \text{True} \mid \text{Approved}, \text{Premium} = \text{Limited}) = P(\text{Medical\_Necessity} = \text{True} \mid \text{Approved}, \text{Premium} = \text{Full})$ | Approval decisions should have consistent meaning (reliability) across coverage types. |
-
----
-
+|--------|---------------|-----------|
+| **Equal Opportunity** (Clinical Merit-Based) | P(Approval │ Clinically_Justified = True, Requester = GP) = P(Approval │ Clinically_Justified = True, Requester = Surgeon) | Clinical justification should determine approval, not requester role. |
+| **Demographic Parity** (Coverage Equity) | P(Approval │ Emergency = True, Premium = Limited) = P(Approval │ Emergency = True, Premium = Full) | Emergency medical need should not depend on coverage tier. |
+| **Predictive Parity** (Outcome Reliability) | P(Medical_Necessity = True │ Approved, Premium = Limited) = P(Medical_Necessity = True │ Approved, Premium = Full) | Approval decisions should have consistent meaning (reliability) across coverage types. |
 ## 2.3 Regulatory Alignment
 
 **Healthcare Equity Standards:**
