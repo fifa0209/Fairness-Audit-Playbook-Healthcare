@@ -1,4 +1,4 @@
-# 🩺 MLOps Fairness Audit Playbook (Healthcare)
+#  MLOps Fairness Audit Playbook
 
 This project contains the documentation and executable code for auditing machine learning models used in **healthcare requests** (e.g., medical procedure pre-approvals) for fairness.  
 
@@ -14,18 +14,19 @@ The project is divided into two main components: **documentation** and **code**.
 
 **Documentation**
 
-This playbook is organized into six core components and a comprehensive case study. Navigate through the files below to conduct a full fairness audit.
+This playbook is organized into Executive Summary, six core components and a comprehensive case study. Navigate through the files below to conduct a full fairness audit.
 
 
 | Part | Title | Focus Area | File Link |
 | :--- | :--- | :--- | :--- |
-| **I** | **Historical Context Assessment** | Identifying patterns of historical and systemic bias. | [01_Historical_Context.md](PLAYBOOK-COMPONENTS/01_Historical_Context.md) |
-| **II** | **Fairness Definition Selection** | Establishing a healthcare-specific fairness framework and metrics. | [02_Fairness_Definition.md](PLAYBOOK-COMPONENTS/02_Fairness_Definition.md) |
-| **III** | **Bias Source Identification** | Mapping and prioritizing bias across data, algorithm, and deployment. | [03_Bias_Source_Identification.md](PLAYBOOK-COMPONENTS/03_Bias_Source_Identification.md) |
-| **IV** | **Comprehensive Metrics Implementation** | Detailed technical implementation of group, individual, and intersectional fairness metrics. | [04_Metrics_Implementation.md](PLAYBOOK-COMPONENTS/04_Metrics_Implementation.md) |
-| **V** | **Implementation Guide** | A four-phase audit workflow and intervention framework. | [05_Part_V_Implementation_Guide.md](PLAYBOOK-COMPONENTS/05_Implementation_Guide.md) |
-| **VI** | **Validation Framework** | Defining success metrics and the process for internal/external validation. | [06_Part_VI_Validation_Framework.md](PLAYBOOK-COMPONENTS/06_Validation_Framework.md) |
-| **VII** | **Case Study Application** | **Emergency CT Scan Approval System** scenario and lessons learned. | [07_Case_Study_Application.md](Case-Study/07_Case_Study_Application.md) |
+| **I** | **Executive Summary** |  Executive Summary & Stakeholder Management. | [01_Historical_Context.md](PLAYBOOK-COMPONENTS/00_Executive_Summary.md) |
+| **II** | **Historical Context Assessment** | Identifying patterns of historical and systemic bias. | [01_Historical_Context.md](PLAYBOOK-COMPONENTS/01_Historical_Context.md) |
+| **III** | **Fairness Definition Selection** | Establishing a healthcare-specific fairness framework and metrics. | [02_Fairness_Definition.md](PLAYBOOK-COMPONENTS/02_Fairness_Definition.md) |
+| **IV** | **Bias Source Identification** | Mapping and prioritizing bias across data, algorithm, and deployment. | [03_Bias_Source_Identification.md](PLAYBOOK-COMPONENTS/03_Bias_Source_Identification.md) |
+| **V** | **Comprehensive Metrics Implementation** | Detailed technical implementation of group, individual, and intersectional fairness metrics. | [04_Metrics_Implementation.md](PLAYBOOK-COMPONENTS/04_Metrics_Implementation.md) |
+| **VI** | **Implementation Guide** | A four-phase audit workflow and intervention framework. | [05_Part_V_Implementation_Guide.md](PLAYBOOK-COMPONENTS/05_Implementation_Guide.md) |
+| **VII** | **Validation Framework** | Defining success metrics and the process for internal/external validation. | [06_Part_VI_Validation_Framework.md](PLAYBOOK-COMPONENTS/06_Validation_Framework.md) |
+| **VIII** | **Case Study Application** | **Emergency CT Scan Approval System** scenario and lessons learned. | [07_Case_Study_Application.md](Case-Study/07_Case_Study_Application.md) |
 
 ---
 **Code**
