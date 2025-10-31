@@ -236,6 +236,3 @@ This executive summary provides leadership with the business case, resource requ
 
 **Approval Required**: ☐ Executive Sponsor ☐ Compliance Lead ☐ Data Governance
 
-**Date**: ________________  
-**Approved Budget**: $__________  
-**Audit Start Date**: ________________
