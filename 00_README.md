@@ -19,7 +19,7 @@ This playbook is organized into Executive Summary, six core components and a com
 
 | Part | Title | Focus Area | File Link |
 | :--- | :--- | :--- | :--- |
-| **I** | **Executive Summary** |  Executive Summary & Stakeholder Management. | [01_Historical_Context.md](PLAYBOOK-COMPONENTS/00_Executive_Summary.md) |
+| **I** | **Executive Summary** |  Executive Summary & Stakeholder Management. | [00_Executive_Summary.md](PLAYBOOK-COMPONENTS/00_Executive_Summary.md) |
 | **II** | **Historical Context Assessment** | Identifying patterns of historical and systemic bias. | [01_Historical_Context.md](PLAYBOOK-COMPONENTS/01_Historical_Context.md) |
 | **III** | **Fairness Definition Selection** | Establishing a healthcare-specific fairness framework and metrics. | [02_Fairness_Definition.md](PLAYBOOK-COMPONENTS/02_Fairness_Definition.md) |
 | **IV** | **Bias Source Identification** | Mapping and prioritizing bias across data, algorithm, and deployment. | [03_Bias_Source_Identification.md](PLAYBOOK-COMPONENTS/03_Bias_Source_Identification.md) |
@@ -49,6 +49,18 @@ This playbook is organized into Executive Summary, six core components and a com
 - **Statistical Validation**: Utilizes *Bootstrap Resampling* to calculate Confidence Intervals (CI) and the *Chi-Square Test* to prove the statistical significance and robustness of observed fairness violations.  
 - **Custom Feature Engineering**: Data generation includes creation of a weighted *Priority Score* based on multiple clinical features.  
 
+## ⚠️ Important Considerations
+
+### Edge Cases Handled
+
+- **Small Sample Sizes**: Bayesian estimation when n < 30
+- **Black Box Systems**: Behavioral testing strategies
+- **Temporal Drift**: Monthly fairness monitoring
+- **Missing Data**: Robust error handling
+
+### Regulatory Compliance
+
+- **Healthcare**: HIPAA, EMTALA, ACA non-discrimination
 ---
 
 ## 🚀 Getting Started
